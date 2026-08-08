@@ -2,7 +2,6 @@
 description: Pre-implementation feasibility and quality gate. Determines whether a feature is ready for engineering execution without unnecessarily blocking delivery.
 mode: subagent
 model: deepseek/deepseek-v4-flash
-mode: subagent
 temperature: 0.2
 color: '#ffb300'
 steps: 40
