@@ -8,16 +8,22 @@ steps: 40
 permission:
   bash:
     '*': ask
+    'bun *': allow
+    'dirname *': allow
+    'echo *': allow
     'find *': allow
     'git *': allow
     'git push *': ask
     'grep *': allow
+    'head *': allow
     'ls *': allow
     'node *': allow
     'npm *': allow
     'npx *': allow
     'pnpm *': allow
     'rg *': allow
+    'sort *': allow
+    'uniq *': allow
     'wc *': allow
     'yarn *': allow
 ---

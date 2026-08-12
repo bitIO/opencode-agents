@@ -8,6 +8,17 @@ steps: 40
 permission:
   bash:
     '*': ask
+    'bun *': allow
+    'dirname *': allow
+    'echo *': allow
+    'find *': allow
+    'grep *': allow
+    'head *': allow
+    'ls *': allow
+    'rg *': allow
+    'sort *': allow
+    'uniq *': allow
+    'wc *': allow
 --------------
 
 # delivery-gate

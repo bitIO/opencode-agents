@@ -8,10 +8,16 @@ steps: 80
 permission:
   bash:
     '*': deny
+    'bun *': allow
+    'dirname *': allow
+    'echo *': allow
     'find *': allow
     'grep *': allow
+    'head *': allow
     'ls *': allow
     'rg *': allow
+    'sort *': allow
+    'uniq *': allow
     'wc *': allow
   external_directory:
     '~/.config/opencode/agents/*': allow

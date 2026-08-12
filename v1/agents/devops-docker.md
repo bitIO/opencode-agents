@@ -6,11 +6,14 @@ temperature: 0.2
 permission:
   bash:
     '*': ask
+    'bun *': allow
+    'dirname *': allow
     'dive *': allow
     'docker *': allow
     'docker compose *': allow
     'docker-compose *': allow
     'dockle *': allow
+    'echo *': allow
     'find *': allow
     'gh *': allow
     'git *': allow
@@ -18,9 +21,12 @@ permission:
     'grep *': allow
     'grype *': allow
     'hadolint *': allow
+    'head *': allow
     'ls *': allow
     'rg *': allow
+    'sort *': allow
     'trivy *': allow
+    'uniq *': allow
     'wc *': allow
   skill:
     docker-*: allow
