@@ -1,6 +1,6 @@
 ---
 description: GitHub specialist. Expert in the gh CLI and the GitHub MCP server for issues, PRs, reviews, repos, branches, releases, and CI. Use for any GitHub workflow or repo management task.
-model: opencode/big-pickle
+model: deepseek/deepseek-v4-flash
 mode: subagent
 permission:
   bash:

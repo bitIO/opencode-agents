@@ -1,6 +1,6 @@
 ---
 description: Render deployment specialist that helps deploy, configure, debug, and monitor applications on Render.
-model: opencode/big-pickle
+model: deepseek/deepseek-v4-flash
 mode: subagent
 permission:
   bash:

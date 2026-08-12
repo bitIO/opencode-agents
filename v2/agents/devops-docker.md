@@ -1,6 +1,6 @@
 ---
 description: DevOps and Docker specialist. Use for Dockerfile authoring/optimization, docker-compose, container registry pushes, image tagging, base image vulnerability review, container security hardening, and local dev environment setup.
-model: opencode/big-pickle
+model: deepseek/deepseek-v4-flash
 mode: subagent
 temperature: 0.2
 permission:
