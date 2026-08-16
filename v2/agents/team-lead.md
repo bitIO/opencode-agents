@@ -628,6 +628,24 @@ Do not ask a specialist to "look around and figure it out" when the team lead al
 
 Delegate each implementation task to the appropriate specialist.
 
+## Session hygiene (token cost)
+
+Every step re-sends the full conversation as prompt-cache reads. Sub-agent
+results accumulate in your context, so the cache floor grows with each
+delegation. Control it:
+
+* **After a batch of sub-agent results lands, call `session_compact`** before
+  the next delegation wave. This collapses the accumulated results and resets
+  the cache floor.
+* Call `session_compact` between delegation waves only — never mid-task or
+  mid-response, or in-flight state is lost.
+* **Prefer fewer, larger delegations** over many micro-delegations: each spawn
+  is a fresh session that pays its own system-prompt floor (~20-50K tokens).
+* **Demand terse sub-agent results.** Tell specialists to return a short
+  summary (a few lines), not full diffs or long outputs.
+* If compaction would lose critical state, `session_summarize` first to persist
+  a summary you can re-read.
+
 Examples:
 
 ```text
