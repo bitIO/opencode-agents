@@ -29,7 +29,7 @@ flowchart TD
 
     GH --> UNDER["Technical understanding"]
     UNDER -.-> EX["explore / general · investigation"]
-    UNDER -.-> SPEC["dev-node · dev-react · devops-docker · render"]
+    UNDER -.-> SPEC["dev-node · dev-react · devops-docker"]
 
     UNDER --> DG["delivery-gate"]
     DG -.-> SQA["qa-security · qa-data · qa-perf · qa-a11y · qa-testing · github"]
@@ -126,7 +126,7 @@ assumptions.
   create ten tasks before confirming the design is valid.
 
 The gate may call specialists for evidence (`qa-security`, `qa-data`, `qa-perf`,
-`qa-a11y`, `qa-testing`, `dev-*`, `devops-docker`, `render`, `github`) but owns
+`qa-a11y`, `qa-testing`, `dev-*`, `devops-docker`, `github`) but owns
 the final decision. It does not mutate the GitHub issue.
 
 ### 3. Plan
@@ -145,7 +145,6 @@ Each task is delegated to the matching specialist:
 | Node / TypeScript  | `dev-node`       |
 | React / frontend   | `dev-react`      |
 | Docker / infra     | `devops-docker`  |
-| Deployment         | `render`         |
 | GitHub operations  | `github`         |
 
 ### 5. Verify

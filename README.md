@@ -271,7 +271,6 @@ Typical specialists include:
 | `qa-perf`       | Performance                       |
 | `qa-a11y`       | Accessibility                     |
 | `review`        | Code/system review                |
-| `render`        | Render deployment                 |
 | `product-owner` | Requirements refinement           |
 
 Specialists should remain narrow.
@@ -666,7 +665,6 @@ team-lead
 ├── dev-node
 ├── dev-react
 ├── devops-docker
-├── render
 ├── github
 ├── ...                       ← more specialists may be added as needed
 │

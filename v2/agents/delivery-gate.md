@@ -207,7 +207,6 @@ Relevant specialists include:
 * React architecture → `dev-react`
 * Node.js / TypeScript architecture → `dev-node`
 * Docker / infrastructure → `devops-docker`
-* Deployment → `render`
 * GitHub / repository workflow → `github`
 
 Use the specialist's findings as evidence.

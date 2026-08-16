@@ -629,7 +629,6 @@ Database integrity → qa-data
 Security → qa-security
 Testing → qa-testing
 GitHub → github
-Deployment → render
 ```
 
 A specialist should work only within the task's scope.
@@ -990,7 +989,7 @@ Git / repository problem
     → github
 
 Deployment problem
-    → render / devops-docker
+    → devops-docker
 ```
 
 Do not solve every failure by adding another agent.
