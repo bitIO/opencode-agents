@@ -9,6 +9,8 @@ permission:
   bash:
     '*': ask
     'bun *': allow
+    'curl *': allow
+    'dig *': allow
     'dirname *': allow
     'echo *': allow
     'find *': allow
@@ -26,6 +28,7 @@ permission:
     'sort *': allow
     'uniq *': allow
     'wc *': allow
+    'whois *': allow
     'yarn *': allow
   skill:
     '*': deny
@@ -58,6 +61,20 @@ Before starting a security task, load the relevant skill via the `skill` tool �
 - Container/cloud: secrets baked into images, privileged containers, running as root, missing resource limits.
 - For Supabase/Postgres: RLS policies, `security definer` misuse, exposed auth, storage bucket policies.
 - Secrets scanning: use the `github` sub-agent's `run_secret_scanning` when reviewing code or diffs, and grep for common leak patterns (API keys, tokens, connection strings).
+
+## External recon / OSINT (your own app)
+
+Run this when asked what an external attacker sees on the target (domain, host, or app). No scanner suite needed — you have `bash`, `curl`, `dig`, `webfetch`, and `websearch`.
+
+1. **Subdomains**: `curl -s "https://crt.sh/?q=%25.<domain>&output=json"`, extract names, dedupe with `sort -u`. Cross-check against deploy docs and env files in the repo.
+2. **Tech fingerprint**: `npx wappalyzer <url>` for stack, or read it from `curl -sI` response headers.
+3. **Security headers**: `curl -sI <url>` — flag missing CSP, HSTS, X-Frame-Options, Referrer-Policy.
+4. **Public endpoints**: probe staged paths (`/api`, `/admin`, `/health`, `/graphql`, Strapi's `/api/users-permissions/roles`) for open 200s, auth bypass, or info disclosure.
+5. **Leaked creds**: `websearch` for `"<domain>" api key OR token OR password`; GitHub code search for the org; check the repo's own git history and `.env` files (grep for tokens). Report anything found, do not use it.
+6. **Dangling DNS/CNAMEs**: resolve each subdomain with `dig`; flag CNAMEs pointing at deprovisioned cloud resources (S3, Vercel, Render, CloudFront) — classic takeover vector.
+7. **External dependency posture**: `pnpm audit`/`npm audit` and check the public repo for committed config/env files.
+
+Report in the same prioritized format: severity, evidence (the actual response/output), exploit path, fix.
 
 ## Reporting
 
