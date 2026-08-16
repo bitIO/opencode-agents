@@ -12,13 +12,23 @@ permission:
     'dirname *': allow
     'echo *': allow
     'find *': allow
+    'git *': allow
+    'git push *': ask
     'grep *': allow
     'head *': allow
     'ls *': allow
     'rg *': allow
+    'rtk *': allow
     'sort *': allow
     'uniq *': allow
     'wc *': allow
+  skill:
+    '*': deny
+    fcalle-dev-architecture: allow
+    fcalle-dev-git: allow
+    fcalle-dev-testing: allow
+    find-skills: allow
+    4r-code-review: allow
 --------------
 
 # delivery-gate

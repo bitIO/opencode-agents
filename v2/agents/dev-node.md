@@ -22,10 +22,22 @@ permission:
     'npx *': allow
     'pnpm *': allow
     'rg *': allow
+    'rtk *': allow
     'sort *': allow
     'uniq *': allow
     'wc *': allow
     'yarn *': allow
+  skill:
+    '*': deny
+    fcalle-dev-*: allow
+    find-skills: allow
+    supabase: allow
+    supabase-postgres-best-practices: allow
+    drizzle: allow
+    drizzle-migrations: allow
+    turborepo: allow
+    docker-patterns: allow
+    4r-code-review: allow
 ---
 
 # dev-node

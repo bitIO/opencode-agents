@@ -15,15 +15,27 @@ permission:
     'git push *': ask
     'grep *': allow
     'head *': allow
+    'jq *': allow
     'ls *': allow
+    'mkdir *': allow
     'npm *': allow
     'npx *': allow
     'pnpm *': allow
+    'printf *': allow
+    'python3 *': allow
     'rg *': allow
+    'rtk *': allow
+    'sed *': allow
     'sort *': allow
+    'tail *': allow
     'test *': allow
     'uniq *': allow
     'wc *': allow
+  skill:
+    '*': deny
+    fcalle-dev-git: allow
+    find-skills: allow
+    4r-code-review: allow
 ---
 
 # GitHub Assistant

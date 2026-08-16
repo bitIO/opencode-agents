@@ -15,17 +15,23 @@ permission:
     'git *': allow
     'git push *': ask
     'grep *': allow
+    'GH_TOKEN=* rtk gh *': allow
     'head *': allow
     'ls *': allow
     'npm *': allow
     'npx *': allow
     'pnpm *': allow
     'rg *': allow
+    'rtk *': allow
     'sort *': allow
     'uniq *': allow
     'wc *': allow
   question: allow
   task: allow
+  skill:
+    '*': deny
+    fcalle-dev-architecture: allow
+    find-skills: allow
 ---
 
 # product-owner

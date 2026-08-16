@@ -22,10 +22,19 @@ permission:
     'npx *': allow
     'pnpm *': allow
     'rg *': allow
+    'rtk *': allow
     'sort *': allow
     'uniq *': allow
     'wc *': allow
     'yarn *': allow
+  skill:
+    '*': deny
+    fcalle-dev-testing: allow
+    fcalle-dev-typescript: allow
+    find-skills: allow
+    supabase-postgres-best-practices: allow
+    docker-patterns: allow
+    4r-code-review: allow
 ---
 
 # qa-security

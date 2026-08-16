@@ -22,10 +22,19 @@ permission:
     'npx *': allow
     'pnpm *': allow
     'rg *': allow
+    'rtk *': allow
     'sort *': allow
     'uniq *': allow
     'wc *': allow
     'yarn *': allow
+  skill:
+    '*': deny
+    fcalle-dev-testing: allow
+    fcalle-dev-typescript: allow
+    find-skills: allow
+    playwright-best-practices: allow
+    turborepo: allow
+    vercel-react-best-practices: allow
 ---
 
 # qa-perf

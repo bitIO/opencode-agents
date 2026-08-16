@@ -16,11 +16,20 @@ permission:
     'head *': allow
     'ls *': allow
     'rg *': allow
+    'rtk *': allow
     'sort *': allow
     'uniq *': allow
     'wc *': allow
   external_directory:
     '~/.config/opencode/agents/*': allow
+  skill:
+    '*': deny
+    fcalle-dev-architecture: allow
+    fcalle-dev-git: allow
+    find-skills: allow
+    4r-code-review: allow
+  session_compact: allow
+  session_summarize: allow
 ---
 
 # team-lead

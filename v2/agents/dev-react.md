@@ -9,6 +9,7 @@ permission:
   bash:
     '*': ask
     'bun *': allow
+    'cat *': allow
     'dirname *': allow
     'echo *': allow
     'find *': allow
@@ -22,10 +23,20 @@ permission:
     'npx *': allow
     'pnpm *': allow
     'rg *': allow
+    'rtk *': allow
     'sort *': allow
     'uniq *': allow
     'wc *': allow
     'yarn *': allow
+  skill:
+    '*': deny
+    fcalle-dev-*: allow
+    find-skills: allow
+    design-taste-frontend: allow
+    impeccable: allow
+    vercel-*: allow
+    playwright-best-practices: allow
+    4r-code-review: allow
 ---
 
 # dev-react

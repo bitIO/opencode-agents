@@ -24,14 +24,22 @@ permission:
     'head *': allow
     'ls *': allow
     'rg *': allow
+    'rtk *': allow
     'sort *': allow
     'trivy *': allow
     'uniq *': allow
     'wc *': allow
   skill:
+    '*': deny
     docker-*: allow
+    docker-compose-orchestration: allow
+    fcalle-dev-architecture: allow
+    fcalle-dev-docker: allow
+    fcalle-dev-git: allow
+    find-skills: allow
     multi-stage-dockerfile: allow
     render-docker: allow
+    turborepo: allow
 ---
 
 # devops-docker

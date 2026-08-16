@@ -22,10 +22,17 @@ permission:
     'npx *': allow
     'pnpm *': allow
     'rg *': allow
+    'rtk *': allow
     'sort *': allow
     'uniq *': allow
     'wc *': allow
     'yarn *': allow
+  skill:
+    '*': deny
+    fcalle-dev-architecture: allow
+    fcalle-dev-git: allow
+    find-skills: allow
+    4r-code-review: allow
 ---
 
 # review
