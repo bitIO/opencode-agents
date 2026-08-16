@@ -48,7 +48,7 @@ Before starting a security task, load the relevant skill via the `skill` tool �
 - `supabase-postgres-best-practices` — load before reviewing anything that touches the database (RLS policies, authz, data exposure).
 - `docker-patterns` — load when reviewing container security: base images, non-root users, secrets in images, layer hygiene.
 - `4r-code-review` — load when reviewing a diff or PR with a security focus (Risk is first).
-- `context7-mcp` — use to verify current security guidance for a framework or library.
+- `context7` (MCP) — use `context7_query-docs` to verify current security guidance for a framework or library.
 
 ## Audit principles
 

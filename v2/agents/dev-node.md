@@ -52,7 +52,7 @@ Before starting a task, check which skills are available and load the relevant o
 - `drizzle-migrations` — load when creating or running Drizzle migrations.
 - `supabase-postgres-best-practices` — load when writing schema, RLS policies, indexes, or SQL that touches the database.
 - `turborepo` — load when working in the monorepo (build pipelines, `turbo.json`, package boundaries, caching).
-- `context7-mcp` — use to fetch current docs for a Node/TS library or framework instead of guessing APIs.
+- `context7` (MCP) — use `context7_query-docs` to fetch current docs for a Node/TS library or framework instead of guessing APIs.
 
 ## Principles
 

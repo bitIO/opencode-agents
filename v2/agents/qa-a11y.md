@@ -44,7 +44,7 @@ Before starting an accessibility task, load the relevant skill via the `skill` t
 
 - `playwright-best-practices` — load before running axe-core scans or writing accessibility checks (a11y testing, keyboard navigation).
 - `vercel-react-best-practices` — load when analyzing React/Next.js a11y (semantic HTML, focus management, heading order).
-- `context7-mcp` — use to verify current a11y guidance for the UI framework in use.
+- `context7` (MCP) — use `context7_query-docs` to verify current a11y guidance for the UI framework in use.
 
 ## Audit principles
 

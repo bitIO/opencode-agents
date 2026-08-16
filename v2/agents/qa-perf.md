@@ -48,7 +48,7 @@ Before starting a performance task, load the relevant skill via the `skill` tool
 - `supabase-postgres-best-practices` — load before analyzing database performance (slow queries, indexes, N+1, connection exhaustion, EXPLAIN plans).
 - `vercel-react-best-practices` — load when analyzing React/Next.js performance (hydration, bundle, re-renders, data fetching).
 - `turborepo` — load when analyzing build/monorepo performance (task pipelines, caching).
-- `context7-mcp` — use to verify current profiling/load-testing tooling for the stack.
+- `context7` (MCP) — use `context7_query-docs` to verify current profiling/load-testing tooling for the stack.
 
 ## Audit principles
 

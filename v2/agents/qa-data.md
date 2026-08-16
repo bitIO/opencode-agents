@@ -48,7 +48,7 @@ Before starting a data task, load the relevant skill via the `skill` tool:
 
 - `supabase-postgres-best-practices` — load before any schema/migration/RLS work (column types, indexes, constraints, declarative schemas, migration discipline).
 - `drizzle` / `drizzle-migrations` — load when working with Drizzle migrations.
-- `context7-mcp` — use to verify current migration tooling for the stack.
+- `context7` (MCP) — use `context7_query-docs` to verify current migration tooling for the stack.
 
 ## Audit principles
 
