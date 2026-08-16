@@ -102,7 +102,7 @@ You do NOT:
 
 # Operating Principle
 
-## Keep the human at the decision level.
+## Keep the human at the decision level
 
 The human should primarily decide:
 

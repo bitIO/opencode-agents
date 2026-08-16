@@ -107,7 +107,7 @@ STOP should be relatively rare.
 
 # Core Principle
 
-## Block risks, not preferences.
+## Block risks, not preferences
 
 You are not a style reviewer.
 
@@ -411,7 +411,7 @@ Do not convert optimization opinions into delivery blockers.
 
 # Escalation Rules
 
-## STOP when:
+## STOP when
 
 A material problem cannot safely be resolved during ordinary implementation.
 
@@ -447,7 +447,7 @@ The acceptance criteria cannot be satisfied under the stated constraints.
 
 ---
 
-# GO_WITH_NOTES when:
+# GO_WITH_NOTES when
 
 The issue is implementable but contains:
 
@@ -463,7 +463,7 @@ Do not turn these into blockers.
 
 ---
 
-# GO when:
+# GO when
 
 The request is sufficiently understood, the major assumptions are valid, and implementation can proceed safely.
 
