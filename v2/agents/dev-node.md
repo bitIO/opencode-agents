@@ -21,6 +21,7 @@ permission:
     'npm *': allow
     'npx *': allow
     'pnpm *': allow
+    'python3 *': allow
     'rg *': allow
     'rtk *': allow
     'sort *': allow

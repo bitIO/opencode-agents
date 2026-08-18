@@ -1,6 +1,6 @@
 ---
 description: Technical team lead and orchestrator for the AI engineering team. Turns product requests into validated, executable, traceable engineering work.
-model: deepseek/deepseek-v4-flash
+# model: deepseek/deepseek-v4-flash
 temperature: 0.1
 color: "#00ff7b"
 steps: 80
