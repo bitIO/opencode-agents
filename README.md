@@ -53,13 +53,13 @@ The target workflow is:
                              clear ◄────────┘
                                │
                  ┌──────────────┼──────────────┐
-                │              │              │
-                ▼              ▼              ▼
-          Requirements     Technical       Repository
-            Analysis       Analysis        Analysis
-                │              │              │
-                └──────────────┼──────────────┘
-                               ▼
+                 │              │              │
+                 ▼              ▼              ▼
+           Requirements     Technical       Repository
+             Analysis       Analysis        Analysis
+                 │              │              │
+                 └──────────────┼──────────────┘
+                                ▼
                         Feasibility Gate
                                 │
                product gap ──► targeted interview
@@ -269,17 +269,17 @@ The team should prefer existing specialists over creating new agents.
 
 Typical specialists include:
 
-| Agent           | Responsibility                    |
-| --------------- | --------------------------------- |
+| Agent           | Responsibility                             |
+| --------------- | ------------------------------------------ |
 | `dev`            | Node.js / TypeScript / React / full-stack |
-| `devops-docker`  | Docker / containerization         |
-| `qa-testing`     | Tests and test strategy           |
-| `qa-security`   | Security and threat modeling      |
-| `qa-data`       | Database/data integrity           |
-| `qa-perf`       | Performance                       |
-| `qa-a11y`       | Accessibility                     |
-| `review`        | Code/system review                |
-| `product-owner` | Requirements refinement           |
+| `devops-docker`  | Docker / containerization                 |
+| `qa-testing`     | Tests and test strategy                   |
+| `qa-security`   | Security and threat modeling               |
+| `qa-data`       | Database/data integrity                    |
+| `qa-perf`       | Performance                                |
+| `qa-a11y`       | Accessibility                              |
+| `review`        | Code/system review                         |
+| `product-owner` | Requirements refinement                    |
 
 Specialists should remain narrow.
 
