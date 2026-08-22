@@ -45,7 +45,14 @@ The target workflow is:
                        │  Orchestrator  │
                        └───────┬────────┘
                                │
-                ┌──────────────┼──────────────┐
+                        clarity triage
+                               │
+                     unclear? ──► Interview
+                               │    product-owner + human,
+                               │    one decision at a time
+                             clear ◄────────┘
+                               │
+                 ┌──────────────┼──────────────┐
                 │              │              │
                 ▼              ▼              ▼
           Requirements     Technical       Repository
@@ -53,10 +60,13 @@ The target workflow is:
                 │              │              │
                 └──────────────┼──────────────┘
                                ▼
-                       Feasibility Gate
-                               │
-                         human decision
-                         when required
+                        Feasibility Gate
+                                │
+               product gap ──► targeted interview
+                                │◄── product-owner + human,
+                                │     loops until GO
+                          human decision
+                          when required
                                │
                                ▼
                          Engineering Plan
@@ -261,11 +271,9 @@ Typical specialists include:
 
 | Agent           | Responsibility                    |
 | --------------- | --------------------------------- |
-| `dev-node`      | Node.js / TypeScript / backend    |
-| `dev-react`     | React / frontend                  |
-| `devops-docker` | Docker / containerization         |
-| `github`        | GitHub / branches / commits / PRs |
-| `qa-testing`    | Tests and test strategy           |
+| `dev`            | Node.js / TypeScript / React / full-stack |
+| `devops-docker`  | Docker / containerization         |
+| `qa-testing`     | Tests and test strategy           |
 | `qa-security`   | Security and threat modeling      |
 | `qa-data`       | Database/data integrity           |
 | `qa-perf`       | Performance                       |
@@ -567,7 +575,7 @@ Agents should load specialized skills when the problem requires them.
 Available skills may include:
 
 * TypeScript
-* architecture
+* Architecture
 * Drizzle
 * Drizzle migrations
 * PostgreSQL
@@ -576,8 +584,9 @@ Available skills may include:
 * Playwright
 * Docker
 * Render
-* code review
-* external documentation research
+* Code review
+* External documentation research
+* GitHub workflows
 
 Skills are **capabilities**, not necessarily agents.
 
@@ -662,10 +671,8 @@ team-lead
 ├── product-owner
 ├── technical-analysis        ← emerging capability
 │
-├── dev-node
-├── dev-react
+├── dev
 ├── devops-docker
-├── github
 ├── ...                       ← more specialists may be added as needed
 │
 ├── qa-testing
@@ -808,3 +815,12 @@ The decision should be based on the responsibilities and failure modes of the sy
 ## Guiding Principle
 
 > **Build an engineering organization, not an agent zoo.**
+
+---
+
+## TODO
+
+[ ] Review these skills:
+     [ ] Frontend: <https://github.com/emilkowalski/skills>
+     [ ] Frontend: <https://www.tasteskill.dev/>
+[ ] Simplify the README to focus on the team and its principles rather than implementation details
