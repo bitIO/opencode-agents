@@ -218,7 +218,7 @@ Relevant specialists include:
 * Testing feasibility → `qa-testing`
 * React architecture → `dev`
 * Node.js / TypeScript architecture → `dev`
-* Docker / infrastructure → `devops-docker`
+* Infrastructure (Docker / Terraform / Auth0 / Render / AWS CDK) → `infra`
 * GitHub / repository workflow → `github-workflows` skill
 
 Use the specialist's findings as evidence.

@@ -272,7 +272,7 @@ Typical specialists include:
 | Agent           | Responsibility                             |
 | --------------- | ------------------------------------------ |
 | `dev`            | Node.js / TypeScript / React / full-stack |
-| `devops-docker`  | Docker / containerization                 |
+| `infra`          | Infrastructure: Docker, Terraform, Auth0, Render, AWS CDK |
 | `qa-testing`     | Tests and test strategy                   |
 | `qa-security`   | Security and threat modeling               |
 | `qa-data`       | Database/data integrity                    |
@@ -584,6 +584,9 @@ Available skills may include:
 * Playwright
 * Docker
 * Render
+* Terraform
+* Auth0
+* AWS CDK
 * Code review
 * External documentation research
 * GitHub workflows
@@ -672,7 +675,7 @@ team-lead
 ├── technical-analysis        ← emerging capability
 │
 ├── dev
-├── devops-docker
+├── infra
 ├── ...                       ← more specialists may be added as needed
 │
 ├── qa-testing

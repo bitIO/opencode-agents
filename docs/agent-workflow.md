@@ -37,7 +37,7 @@ flowchart TD
     GH --> P2["PHASE 2 · PLAN"]
     P2 --> UNDER["technical understanding"]
     UNDER -.-> EX["explore / general · investigation"]
-    UNDER -.-> SPEC["dev · devops-docker"]
+    UNDER -.-> SPEC["dev · infra"]
     UNDER --> DG["delivery-gate"]
     DG -.-> SQA["qa-security · qa-data · qa-perf · qa-a11y · qa-testing · dev"]
     DG --> DEC{Decision}
@@ -157,7 +157,7 @@ assumptions.
   does not create ten tasks before confirming the design is valid.
 
 The gate may call specialists for evidence (`qa-security`, `qa-data`, `qa-perf`,
-`qa-a11y`, `qa-testing`, `dev-*`, `devops-docker`) but owns
+`qa-a11y`, `qa-testing`, `dev-*`, `infra`) but owns
 the final decision. It does not mutate the GitHub issue.
 
 #### 3. Decomposition
@@ -177,7 +177,7 @@ Each task is delegated to the matching specialist:
 | ------------------ | ---------------- |
 | Node / TypeScript  | `dev`            |
 | React / frontend   | `dev`            |
-| Docker / infra     | `devops-docker`  |
+| Infra (Docker / Terraform / Auth0 / Render / CDK) | `infra`        |
 | GitHub operations  | `github-workflows` skill |
 
 #### 5. Verify

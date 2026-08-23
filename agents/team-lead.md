@@ -9,6 +9,7 @@ permission:
   bash:
     '*': deny
     'bun *': allow
+    'cat': allow
     'dirname *': allow
     'echo *': allow
     'find *': allow
@@ -23,6 +24,8 @@ permission:
     'sort *': allow
     'uniq *': allow
     'wc *': allow
+  tools:
+    '*': allow
   external_directory:
     '~/.config/opencode/agents/*': allow
   skill:
@@ -754,7 +757,7 @@ Examples:
 ```text
 Node / TypeScript → dev
 React / frontend → dev
-Docker → devops-docker
+Infra (Docker / Terraform / Auth0 / Render / CDK) → infra
 Database integrity → qa-data
 Security → qa-security
 Testing → qa-testing
@@ -1152,8 +1155,8 @@ Accessibility problem
 Git / repository problem
     → github-workflows skill
 
-Deployment problem
-    → devops-docker
+Deployment / infrastructure problem
+    → infra
 ```
 
 Do not solve every failure by adding another agent.
