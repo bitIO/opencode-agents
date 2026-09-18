@@ -749,6 +749,10 @@ delegation. Control it:
   is a fresh session that pays its own system-prompt floor (~20-50K tokens).
 * **Demand terse sub-agent results.** Tell specialists to return a short
   summary (a few lines), not full diffs or long outputs.
+* **Hand off paths, diffs, and the spec once — not file bodies.** Give a
+  specialist the file paths, the specific hunks, and the locked spec. Never
+  paste whole file contents, nor re-summarize the spec in every task: full
+  bodies inflate both the subagent prompt and what returns to your context.
 * If compaction would lose critical state, `session_summarize` first to persist
   a summary you can re-read.
 
